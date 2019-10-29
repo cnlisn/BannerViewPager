@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+apply from: "../basic.gradle"
+
+android {
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    resourcePrefix ""
+}
+
+dependencies {
+    implementation rootProject.ext.dependencies.appcompatV7
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.materialProgressBar
+    implementation rootProject.ext.dependencies.glide
+    implementation rootProject.ext.dependencies.photoView
+    implementation rootProject.ext.dependencies.smartRefreshHeader
+    implementation rootProject.ext.dependencies.smartRefreshLayout
+    implementation project(path: ':bannerview')
+//    implementation rootProject.ext.dependencies.banner
+
+    api rootProject.ext.dependencies.rxlifecycle
+    api rootProject.ext.dependencies.rxlifecycle_components
+    api rootProject.ext.dependencies.rxjava
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.converter_scalars
+    api rootProject.ext.dependencies.converter_gson
+    api rootProject.ext.dependencies.adapter_rxjava2
+    implementation project(path: ':ideahttp')
+
+
+}
