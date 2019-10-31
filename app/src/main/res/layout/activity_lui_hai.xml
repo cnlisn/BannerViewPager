@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.LuiHaiActivity">
+
+    <Button
+        android:text="是否是刘海屏"
+        android:id="@+id/checkIsLiuHai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/t_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="状态栏高度"
+        android:id="@+id/getH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/t_H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

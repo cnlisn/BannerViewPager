@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_indicator_style:
                 intent = new Intent(this, IndicatorStyleActivity.class);
                 break;
+            case R.id.btn_liuhai:
+                intent = new Intent(this, LuiHaiActivity.class);
+                break;
             default:
                 intent = new Intent(this, CustomerBannerItemActivity.class);
                 break;

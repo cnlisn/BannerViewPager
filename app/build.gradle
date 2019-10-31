@@ -19,6 +19,7 @@ android {
 
 dependencies {
     implementation rootProject.ext.dependencies.appcompatV7
+    implementation rootProject.ext.dependencies.constraintLayout
     implementation rootProject.ext.dependencies.recyclerview
     implementation rootProject.ext.dependencies.materialProgressBar
     implementation rootProject.ext.dependencies.glide

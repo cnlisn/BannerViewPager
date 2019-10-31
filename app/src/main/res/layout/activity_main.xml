@@ -54,4 +54,12 @@
         android:onClick="onClick"
         android:text="@string/title_transformer" />
 
+    <Button
+        android:id="@+id/btn_liuhai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="onClick"
+        android:text="@string/liuhai" />
+
 </LinearLayout>

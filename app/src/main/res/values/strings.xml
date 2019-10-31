@@ -13,4 +13,5 @@
     <string name="normal">NORMAL</string>
     <string name="smooth">SMOOTH</string>
     <string name="custom_indicator_view">Custom IndicatorView</string>
+    <string name="liuhai">刘海屏工具测试</string>
 </resources>
